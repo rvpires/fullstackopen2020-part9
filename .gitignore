@@ -1,1 +1,3 @@
-/node_modules
+/first-exercises/node_modules
+/patientor/server/node_modules
+/patientor/client/node_modules

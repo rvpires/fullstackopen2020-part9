@@ -1,4 +1,4 @@
-const calculateBmi = (height : number , weight : number) => {
+export const calculateBmi = (height : number , weight : number) => {
     
     if(height <= 0){
         throw new Error('Height should be larger than zero')
@@ -42,13 +42,17 @@ const calculateBmi = (height : number , weight : number) => {
         return 'Obese Class III (Very severely obese)'	
     }
 
+    else{
+        throw new Error('Something went wrong')
+    }
+
 }
 
-interface personalDetails  {
+/*interface personalDetails  {
     height : number,
     weight : number
 }
-const parseArguments = (argv : Array<string>) : personalDetails => {
+/*const parseArguments = (argv : Array<string>) : personalDetails => {
     
 
     if(argv.length <= 2){
@@ -72,4 +76,4 @@ const parseArguments = (argv : Array<string>) : personalDetails => {
 
 let args = parseArguments(process.argv)
 
-console.log(calculateBmi(args.height , args.weight))
+console.log(calculateBmi(args.height , args.weight))*/
